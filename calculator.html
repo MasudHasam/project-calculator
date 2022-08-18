@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple javascript calculator.</title>
+    <!-- tailwind cds link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-500">
+    <main>
+        <section>
+            <h1 class="text-3xl font-bold text-indigo-300 text-center mt-20">simple calculator</h1>
+            <div class="w-1/5 mx-auto bg-gray-700 px-4 pb-4 rounded-lg mt-6">
+                <h1 class="text-white font-bold pt-2 pb-2"><i>CASIO</i></h1>
+                <h1
+                    class="text-right pr-3 pt-7 h-14 font-bold text-black text-xl bg-slate-100 rounded-md w-11/12 block ml-2 mb-2 ">
+                    <span id="claculatorDisplay"></span>
+                </h1>
+                <div>
+                    <button onclick="buttonClick('seven')"
+                        class="bg-white hover:bg-red-200 w-12 py-2 mx-1 my-1.5 rounded-xl font-bold">
+                        <span id="seven">7</span></button>
+                    <button onclick="buttonClick('eight')"
+                        class="bg-white hover:bg-orange-200 w-12 py-2 mx-1 my-1.5 rounded-xl font-bold">
+                        <span id="eight">8</span></button>
+                    <button onclick="buttonClick('nine')"
+                        class="bg-white hover:bg-amber-200 w-12 py-2 mx-1 my-1.5 rounded-xl font-bold"> <span
+                            id="nine">9</span></button>
+
+                    <button id="delet"
+                        class="bg-white hover:bg-red-400 w-12 py-2 mx-1 my-1.5 rounded-xl font-bold">Delet</button>
+
+                </div>
+                <div>
+                    <button onclick="buttonClick('four')"
+                        class="bg-white hover:bg-yellow-200 w-12 py-2 mx-1 my-1.5 rounded-xl font-bold"> <span
+                            id="four">4</span></button>
+                    <button onclick="buttonClick('five')"
+                        class="bg-white hover:bg-lime-200 w-12 py-2 mx-1 my-1.5 rounded-xl font-bold"> <span
+                            id="five">5</span></button>
+                    <button onclick="buttonClick('six')"
+                        class="bg-white hover:bg-green-200 w-12 py-2 mx-1 my-1.5 rounded-xl font-bold"> <span
+                            id="six">6</span></button>
+
+                    <button id="result" class="bg-white hover:bg-green-400 w-12 py-2 mx-1 my-1.5 rounded-xl font-bold">
+                        <span>=</span></button>
+
+                </div>
+                <div>
+                    <button onclick="buttonClick('one')"
+                        class="bg-white hover:bg-emerald-200 w-12 py-2 mx-1 my-1.5 rounded-xl font-bold"> <span
+                            id="one">1</span></button>
+                    <button onclick="buttonClick('two')"
+                        class="bg-white hover:bg-teal-200 w-12 py-2 mx-1 my-1.5 rounded-xl font-bold"> <span
+                            id="two">2</span></button>
+                    <button onclick="buttonClick('three')"
+                        class="bg-white hover:bg-cyan-200 w-12 py-2 mx-1 my-1.5 rounded-xl font-bold"> <span
+                            id="three">3</span></button>
+
+                    <button onclick="buttonClick('division')"
+                        class="bg-white hover:bg-blue-400 w-12 py-2 mx-1 my-1.5 rounded-xl font-bold"> <span
+                            id="division">/</span></button>
+
+                </div>
+                <div>
+                    <button onclick="buttonClick('zero')"
+                        class="bg-white hover:bg-sky-200 w-12 py-2 mx-1 my-1.5 rounded-xl font-bold"> <span
+                            id="zero">0</span></button>
+                    <button onclick="buttonClick('plus')"
+                        class="bg-white hover:bg-indigo-400 w-12 py-2 mx-1 my-1.5 rounded-xl font-bold"> <span
+                            id="plus">+</span></button>
+                    <button onclick="buttonClick('minas')"
+                        class="bg-white hover:bg-violet-400 w-12 py-2 mx-1 my-1.5 rounded-xl font-bold"> <span
+                            id="minas">-</span></button>
+
+                    <button onclick="buttonClick('multiple')"
+                        class="bg-white hover:bg-pink-400 w-12 py-2 mx-1 my-1.5 rounded-xl font-bold"> <span
+                            id="multiple">*</span></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script/calculation.js"></script>
+</body>
+
+</html>
